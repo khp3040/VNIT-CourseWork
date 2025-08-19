@@ -1,0 +1,54 @@
+.inv-analysis {
+  .@{ant-prefix} {
+    &-list {
+      &-item,
+      &-header,
+      &-footer {
+        padding: 0 25px !important;
+      }
+
+      &-item {
+        &-meta{
+           &-content, &-avatar{
+            margin-bottom: auto;
+          }
+        }
+      }
+
+      &-grid {
+        .@{ant-prefix}-list{
+          &-item,
+          &-header,
+          &-footer {
+            padding: 25px 10px 0 10px !important;
+            text-align: justify;
+          }
+        }
+      }
+    }
+    
+    &-collapse {
+      background-color: @white;
+      &, &-item {
+        border-radius: 12px !important;
+      }
+
+      &-header {
+        padding: 15px 35px !important;
+      }
+
+      &-content {
+        &-box {
+          padding: 0 35px 15px 35px !important;
+        }
+      }
+    }
+  }
+
+  &.grade-analysis {
+    tbody > tr > td:last-child {
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+}

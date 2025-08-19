@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/54197508-28d2-4af7-aed4-53c3a7206a36/resourceGroups/VNIT/providers/Microsoft.Web/sites/SoftwareLab2-Assignment3",
+    "appService.deploySubpath": "app\\dist"
+}

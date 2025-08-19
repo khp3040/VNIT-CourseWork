@@ -1,0 +1,83 @@
+.input {
+  &-range {
+    .@{ant-prefix} {
+      &-input {
+        &-group {
+          .input-range {
+            &-splitter {
+              color: @grey;
+              border-left: none;
+              border-right: none;
+            }
+
+            &-splitter,
+            &-prefix,
+            &-suffix {
+              pointer-events: none;
+            }
+
+            &-prefix,
+            &-suffix {
+              text-align: center;
+            }
+          }
+        }
+        &-number {
+          z-index: 5 !important;
+
+          &-input {
+            text-align: center;
+          }
+
+          &:hover,
+          &-focused {
+            border-color: @hover-color !important;
+          }
+
+          &.input-range {
+            &-left {
+              border-right-color: transparent;
+            }
+
+            &-right {
+              border-left-color: transparent;
+            }
+          }
+        }
+      }
+    }
+
+    &-error {
+      .@{ant-prefix}-input {
+        &-number {
+          &:hover,
+          &-focused {
+            z-index: 7 !important;
+            border-color: @error-color !important;
+          }
+        }
+        &-disabled {
+          border-color: @error-color !important;
+        }
+      }
+      .input-range {
+        &-splitter {
+          z-index: 6 !important;
+          color: @grey;
+          border-left: none;
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  &-date {
+    .@{ant-prefix} {
+      &-picker {
+        &-input > input {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
